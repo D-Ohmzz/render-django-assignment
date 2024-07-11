@@ -1,0 +1,9 @@
+django
+djangorestframework
+environs
+django-oidc-provider
+africastalking
+psycopg2
+mozilla-django-oidc
+oauth2
+dj-database-url
