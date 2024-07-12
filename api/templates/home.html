@@ -7,14 +7,10 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Welcome to the Home Page</h1>
-    {% if code %}
-        <p>Authorization Code: {{ code }}</p>
-        <p>Use the code to get an access token.</p>
-    {% endif %}
-    {% if error %}
-        <p>Error: {{ error }}</p>
-        <p>Description: {{ error_description }}</p>
-    {% endif %}
+    <h1>Welcome to the Django Service Home Page</h1>
+    <p> The service features two apis: </p>
+    <p> 1. <a href="https://render-django-assignment.onrender.com/customers">Customers api</a> through which you can add and view customer data </p>
+    <p>2. <a href="https://render-django-assignment.onrender.com/orders">Orders api</a> through which you can add and view order data</p>
+    <p>You can interact with the apis using postman via GET and POST requests</p>
 </body>
 </html>
