@@ -139,8 +139,8 @@ AUTHENTICATION_BACKENDS = (
     'mozilla_django_oidc.auth.OIDCAuthenticationBackend',
 )
 
-OIDC_RP_CLIENT_ID = '41be7e80-20cb-013d-e845-6a147fbb3d13239174'
-OIDC_RP_CLIENT_SECRET = 'b543b6956bb3cfebab0295576f176100be3006ae8532de17290c6c222b66c133'
+OIDC_RP_CLIENT_ID = os.environ.get('OIDC_RP_CLIENT_ID')
+OIDC_RP_CLIENT_SECRET = os.environ.get('OIDC_RP_CLIENT_SECRET')
 
 OIDC_OP_AUTHORIZATION_ENDPOINT = "https://ohmzz.onelogin.com/oidc/2/auth"
 OIDC_OP_TOKEN_ENDPOINT = "https://ohmzz.onelogin.com/oidc/2/token"
